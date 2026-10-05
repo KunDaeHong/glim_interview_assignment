@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ShowAllFiles>true</ShowAllFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommandArguments>--input Resource/1_astronaut.bmp --output Resource/result.bmp --filter grayscale</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArgumentsHistory>--input Resource/1_astronaut.bmp --output Resource/result.bmp --filter grayscale|</LocalDebuggerCommandArgumentsHistory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>--input Resource/1_astronaut.bmp --output Resource/result.bmp --pipeline "blur, grayscale"</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArgumentsHistory>--input Resource/3_chelsea_cat.bmp --output Resource/result.bmp --pipeline "grayscale, blur"|--input Resource/3_chelsea_cat.bmp --output Resource/result.bmp --filter blur|--input Resource/1_astronaut.bmp --output Resource/result.bmp --filter blur|--input Resource/1_astronaut.bmp --output Resource/result.bmp --pipeline "grayscale"|--input Resource/1_astronaut.bmp --output Resource/result.bmp --pipeline "blur, grayscale"|</LocalDebuggerCommandArgumentsHistory>
+  </PropertyGroup>
+</Project>

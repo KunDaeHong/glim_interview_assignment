@@ -1,0 +1,4 @@
+# ignore vs files
+.vs/
+x64/
+ImageProcessor/x64/
